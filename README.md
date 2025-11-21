@@ -1,32 +1,24 @@
-# Cross-Platform Expense Tracker — Backend (Ready to Run)
+# Cross-Platform Expense Tracker (Full Stack Demo)
 
-This is a lightweight, ready-to-run backend API for the **Cross-Platform Expense Tracker** project.
-
-It uses:
-- Node.js + Express
-- SQLite (file-based, no extra setup)
-- Simple REST endpoints for expenses
-
-## Getting Started
+## Run server
 
 ```bash
-cd cross-platform-expense-tracker
+cd server
 npm install
 cp .env.example .env
 npm start
 ```
 
-The server will start on `http://localhost:4001` by default.
+## Run client
 
-## Endpoints
+```bash
+cd client
+npm install
+npm run dev
+```
 
-- `GET /health` – health check
-- `GET /api/expenses` – list all expenses (most recent first)
-- `POST /api/expenses` – create new expense  
-  ```json
-  {
-    "userId": "user-1",
-    "category": "Food",
+Client expects server on http://localhost:4001
+
     "amount": 25.5,
     "currency": "USD",
     "note": "Lunch"
